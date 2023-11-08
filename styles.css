@@ -2,10 +2,8 @@
 
 .container {
     display: flex;
-    border: 10px solid orangered;
-    height: 90vh;
-    flex-wrap:;
-    flex-direction: column;
+    min-height: 100vh;    flex-direction: column;
+    justify-content: middle;
 }
 
 /* Reset some default styles */
@@ -16,25 +14,27 @@ body, h1, h2, p {
 
 /* Apply styles to the header */
 header {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     display: flex;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    margin-top: 0.15em;
+    border-top: 0.15em solid black;
+    border-bottom: 0.15em solid black;
     background-color: #ffffff;
-    height: 3.5em;
-    width: 100vw;
+    height: 3em;
+    justify-content: space-between;
+
 }
 
 nav {
-    border: 5px  ;
+    border: 5px;
     display: flex;
-    justify-content: flex-end;
-    align-items:;
 }
 
 nav a {
     border: 5px solid ;
     color: black;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .logo {
@@ -44,13 +44,13 @@ nav a {
 
 .logo img {
     width: 30px; /* Adjust the width of the logo as needed */
-    margin-right: 0.5rem;
 }
 
 /* Apply styles to the content section */
 .content {
+    flex-grow: 1;
     border: 5px solid black; /* Adjust for the top bar height */
-    background: url('background.jpg') center/cover no-repeat; /* Use your background image URL */
+    background-color: red;
 }
 
 /* Apply styles to the background image */
