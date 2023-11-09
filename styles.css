@@ -1,40 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
 
 
 .container {
     display: flex;
-    min-height: 100vh;    flex-direction: column;
-    justify-content: middle;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-/* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Apply styles to the header */
 header {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    font-size: 12px;
     display: flex;
-    margin-top: 0.15em;
-    border-top: 0.15em solid black;
-    border-bottom: 0.15em solid black;
-    background-color: #ffffff;
+    margin-top: 0.15rem;
+    border-top: 0.15rem solid black;
+    border-bottom: 0.15rem solid
+    black;
     height: 3em;
     justify-content: space-between;
 
 }
 
-nav {
-    border: 5px;
-    display: flex;
-}
+.headerNav {
+    align-self: center;
 
-nav a {
-    border: 5px solid ;
-    color: black;
-    margin-left: 2em;
 }
 
 .logo {
@@ -42,57 +38,29 @@ nav a {
     align-items: center;
 }
 
-.logo img {
-    width: 30px; /* Adjust the width of the logo as needed */
-}
 
-/* Apply styles to the content section */
 .content {
-    flex-grow: 1;
-    border: 5px solid black; /* Adjust for the top bar height */
-    background-color: red;
-}
-
-/* Apply styles to the background image */
-.background-image {
-    width: 50%;
-    background: rgba(255, 255, 255, 0.5); /* 50% whitened background */
     display: flex;
+    background-image: url(img/mushroomForest.jpg);
+    flex-grow: 1;
     justify-content: center;
-    align-items: center;
-    height: 70%; /* 70% of the content height */
 }
 
-/* Apply styles to the rectangle */
 .rectangle {
-    background-color: white;
+    background-color: blue;
     padding: 1rem;
     border: 5px solid black;
     border-radius: 10px;
+    align-self: center;
     text-align: center;
-    max-width: 80%; /* Adjust as needed */
+    flex-basis: 20em;
+
+     /* Adjust as needed */
 }
 
 /* Apply styles for mobile screens using media queries */
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    nav {
-        margin-top: 1rem;
-    }
-
-    nav a {
-        margin: 0.5rem;
-    }
-
-    .logo {
-        flex-direction: column;
-    }
-
-    .rectangle {
-        width: 90%;
     }
 }
