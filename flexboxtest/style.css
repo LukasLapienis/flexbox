@@ -6,16 +6,18 @@
     color: black;
     box-sizing:border-box;
     scroll-behavior: smooth;
-    scroll-margin-top: 5vh;
+    scroll-margin-top: 4rem;
 }
 
+
+
 h1 {
-    font-size: 2vh;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 h2 {
-    font-size: 4vh;
+    font-size: 3em;
     font-weight: 500;
 }
 
@@ -30,12 +32,10 @@ body {
     position: relative;
 }
 
-main { 
+/* main { 
     display: flex;
-    flex-direction: row;
-    height: 400vh;
-    justify-content: space-around;
-}
+    position: relative;
+} */
 
 header {
     display: flex;
@@ -43,7 +43,7 @@ header {
     border-top: 0.15rem solid black;
     border-bottom: 0.15rem solid
     black;
-    height: 5vh;
+    height: 4rem;
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -57,10 +57,11 @@ header {
     justify-content: space-evenly;
     flex-grow: 0.25;
     font-size: 1.5vh;
+    font-size: 1em;
 }
 
 .header-logo {
-    max-height: 4vh;
+    width: 3em;
 }
 
 .logo {
@@ -77,8 +78,11 @@ header {
 
 .augalijosNamai {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: 100vh;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .mainLogo {
