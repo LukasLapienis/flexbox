@@ -6,10 +6,8 @@
     color: black;
     box-sizing:border-box;
     scroll-behavior: smooth;
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 4.5rem;
 }
-
-
 
 h1 {
     font-size: 1.5em;
@@ -24,61 +22,67 @@ h2 {
 h3 {
     text-align: center;
     font-weight: 500;
-    font-size: 4vh;
+    font-size: 4rem;
 }
 
 body {
-    height: 400vh;
+    height: 400rem;
     position: relative;
 }
 
-/* main { 
-    display: flex;
-    position: relative;
-} */
-
 header {
-    display: flex;
-    margin-top: 0.15rem;
-    border-top: 0.15rem solid black;
-    border-bottom: 0.15rem solid
-    black;
-    height: 4rem;
-    justify-content: space-between;
+    height: 4.5rem;
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 1;
+    padding-top: 0.5rem;
+}
+
+.header-container {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.15rem solid black;
+    border-bottom: 0.15rem solid black;
 }
 
 .header-nav {
     display: flex;
-    align-self: center;
     justify-content: space-evenly;
-    flex-grow: 0.25;
-    font-size: 1.5vh;
+    flex-grow: 0.5;
+    height: 4rem;
     font-size: 1em;
+    align-items: center;
 }
 
 .header-logo {
-    width: 3em;
+    width: 2em;
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    font-size: 1.5em;
+    height: 4rem;
 }
 
-.container {
-    height: 100vh;
-    display: flex;
+.augalijos-namai::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     background-image: url("/img/mainBackground.jpg");
     opacity: 0.6;
+    z-index: -1;
+    background-repeat: no-repeat;
 }
 
-.augalijosNamai {
+.augalijos-namai {
     display: flex;
-    /* flex-direction: column; */
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -86,22 +90,24 @@ header {
 }
 
 .mainLogo {
-    height: 20vh;
+    height: 10rem;
 }
 
-.content {
+/* .page1 {
     flex-grow: 1;
     justify-content: space-between;  
     align-content: center;
-}
+} */
 
-.mainContent {
+.augalijos-namai-content {
     background-color: white;
-    padding: 9rem;
-    flex-grow: 0.5;
-    align-self: center;
-    text-align: center;
+    flex-grow: 0.6;
     height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .gydomiejiAugalai {
@@ -120,9 +126,38 @@ header {
 }
 
 
+
+
 /* Apply styles for mobile screens using media queries */
 /* @media screen and (max-width: 768px) {
     header {
 
     }
 } */
+@media (max-width: 768px) {
+    header {
+        height: 10rem;
+    }
+    .header-container {
+        height: 9.5rem;
+        flex-wrap: wrap;
+    }
+    .logo a {
+        display: none;
+    }
+    .logo {
+        height: 5rem;
+    }
+
+    .logo img {
+        width: 3em;
+    }
+    
+    .header-nav {
+        width: 100vw;
+        justify-content: space-between;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        border-top: 0.15rem solid black;
+    }
+}
