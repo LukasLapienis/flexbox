@@ -22,7 +22,7 @@ h3 {
     text-align: center;
     font-weight: 500;
     font-size: 1.5rem;
-    padding: 7rem;
+    padding: 3rem;
 }
 
 body {
@@ -104,17 +104,13 @@ header {
     text-align: center;
 }
 
-.gydomieji-augalai h3, .nykstantys-augalai h3 {
-    padding: 7rem;
-}
-
 .gydomieji-augalai {
     background-color: white;
     min-height: 95vh;
 }
 .gydomieji-augalai-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -127,8 +123,9 @@ header {
     gap: 20px;
 }
 
-.gydomieji-augalai-wrap img, .nykstantys-augalai-wrap img{
-    width: 10em;
+.gydomieji-augalai-wrap img {
+    aspect-ratio: 6/7;
+    max-width: 25%;
 }
 
 .nykstantys-augalai {
@@ -153,12 +150,11 @@ header {
     flex-direction: column;
     margin: auto;
     gap: 10px;
-    /* flex-grow: 1; */
     min-width: 15%;
 }
 
 .nykstantys-augalai-wrap img {
-    aspect-ratio: 2/1;
+    aspect-ratio: 1/1;
     width: 100%;
 }
 
@@ -170,14 +166,15 @@ header {
 .misku-nauda-content {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin-left: 2em;
+    margin-right: 2em;
     align-items: center;
     gap: 20px;
 }
 
 .misku-nauda-photo img {
     width: 100%;
-    aspect-ratio: 10/3;
+    aspect-ratio: 13/4;
 }
 
 .misku-nauda-text {
@@ -216,6 +213,9 @@ header {
         padding-right: 0.5em;
         padding-left: 0.5em;
         border-top: 0.15rem solid black;
+    }
+    .augalijos-namai {
+        height: 85vh;
     }
     .gydomieji-augalai-wrap, .gydomieji-augalai-content, .nykstantys-augalai-wrap, .nykstantys-augalai-content {
         flex-direction: column;
