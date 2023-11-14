@@ -23,7 +23,7 @@ h3 {
     text-align: center;
     font-weight: 500;
     font-size: 1.5rem;
-    padding: 8rem;
+    padding: 6rem;
 }
 
 body {
@@ -108,8 +108,8 @@ header {
 
 .gydomieji-augalai {
     background-color: white;
-    min-height: 95vh;
-    /* margin: 30px; */
+    /* min-height: 95vh; */
+    margin: 4rem;
 }
 .gydomieji-augalai-content {
     display: flex;
@@ -130,8 +130,8 @@ header {
 
 .gydomieji-augalai-wrap img {
     /* aspect-ratio: 6/7 */
-    max-width: 25%;
-    flex: 2 0 100%;
+    width: 80%;
+    flex: 1 0 30%;
 }
 
 .nykstantys-augalai {
@@ -178,7 +178,7 @@ header {
     gap: 20px;
 }
 
-.misku-nauda-photo img {
+.misku-nauda-img img {
     width: 100%;
     aspect-ratio: 13/4;
 }
