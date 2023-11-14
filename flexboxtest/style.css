@@ -1,13 +1,14 @@
-* {
-    margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing:border-box;
+*, *::before, *::after {
+    box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-margin-top: 4.5rem;
     text-decoration: none;
     color: black;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+}
 h1 {
     font-size: 1.5em;
     font-weight: 400;
@@ -22,7 +23,7 @@ h3 {
     text-align: center;
     font-weight: 500;
     font-size: 1.5rem;
-    padding: 3rem;
+    padding: 8rem;
 }
 
 body {
@@ -50,7 +51,7 @@ header {
 .header-nav {
     display: flex;
     justify-content: space-evenly;
-    flex-grow: 0.5;
+    flex-grow: 0.3;
     height: 4rem;
     font-size: 1em;
     align-items: center;
@@ -80,6 +81,7 @@ header {
     opacity: 0.6;
     z-index: -1;
     background-repeat: no-repeat;
+    height: 95vh;
 }
 
 .augalijos-namai {
@@ -107,25 +109,29 @@ header {
 .gydomieji-augalai {
     background-color: white;
     min-height: 95vh;
+    /* margin: 30px; */
 }
 .gydomieji-augalai-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
 }
 
 .gydomieji-augalai-wrap {
     display: flex;
     align-items: center;
-    max-width: 40vw;
+    /* max-width: 45vw; */
     text-align: center;
     gap: 20px;
+    flex-basis: 45%;
+    flex-grow: 0.8;
 }
 
 .gydomieji-augalai-wrap img {
-    aspect-ratio: 6/7;
+    /* aspect-ratio: 6/7 */
     max-width: 25%;
+    flex: 2 0 100%;
 }
 
 .nykstantys-augalai {
@@ -190,6 +196,10 @@ header {
 }
 
 @media screen and (max-width: 721px) {
+    h3 {
+        padding: 2rem;
+    }
+    
     header {
         height: 10rem;
         position: relative;
