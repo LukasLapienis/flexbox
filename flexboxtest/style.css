@@ -189,7 +189,7 @@ header {
     .augalijos-namai {
         height: 85vh;
     }
-    .gydomieji-augalai-wrap, .gydomieji-augalai-content, .nykstantys-augalai-wrap, .nykstantys-augalai-content, .misku-nauda-text{
+    .gydomieji-augalai-wrap, .gydomieji-augalai-content, .nykstantys-augalai-wrap, .nykstantys-augalai-content, .misku-nauda-text {
         flex-direction: column;
     }
 }
