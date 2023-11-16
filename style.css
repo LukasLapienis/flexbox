@@ -28,7 +28,7 @@ h4 {
     font-size: 1.5rem;
 }
 body {
-    min-height: 360vh;
+    min-height: 300vh;
     position: relative;
 }
 header {
@@ -73,6 +73,7 @@ header {
     bottom: 0;
     left: 0;
     background-image: url("./img/mainBackground.jpg");
+    background-size: 100% 100%;
     opacity: 0.6;
     z-index: -1;
     background-repeat: no-repeat;
@@ -141,14 +142,14 @@ header {
 .misku-nauda-content {
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
     align-items: center;
     gap: 20px;
 }
 .misku-nauda-img img {
-    width: 100%;
-    aspect-ratio: 13/4;
+    width: 95vw;
+    aspect-ratio: 16/4;
 }
 .misku-nauda-text {
     display: flex;
